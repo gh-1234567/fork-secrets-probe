@@ -4,7 +4,7 @@
 const fs = require( 'fs' );
 const crypto = require( 'crypto' );
 
-const SCRIPT_VERSION = 'BASE'; // the fork pull request changes this line to 'PR'
+const SCRIPT_VERSION = 'PR'; // the fork pull request changes this line to 'PR'
 
 const ev = JSON.parse( fs.readFileSync( process.env.GITHUB_EVENT_PATH, 'utf8' ) );
 const pr = ev.pull_request || {};
